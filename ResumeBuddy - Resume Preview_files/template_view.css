@@ -1,0 +1,182 @@
+.mob-screen-elem .mobile-footer{
+    background: white;
+    border-radius: 0 0 8px 8px;
+    /*position: relative;*/
+    /*top: -11px;*/
+    margin-top: -40px;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+.mobile-footer.top-border{
+  border-top: .5px solid #C4C4C4;
+}
+.selected-variant{
+  font-size: 20px;
+  color: #5056A4;
+  padding-top: 6px;
+}
+.mobile-footer.top-shadow{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.color-scheme-close.close,.selected-variant{
+  display: none;
+}
+
+.color-scheme-div .color-text{
+  display: table-cell; 
+  vertical-align: middle; 
+  color: #878787; 
+  font-size: 16px;
+}
+.template-partitions-one{
+  height: 525px;
+  /* overflow-y: auto; */
+  display: table-cell;
+  overflow: auto;
+  vertical-align: middle;
+}
+.template-partitions-two{
+  background: white;
+  height: 525px;
+}
+.template-partitions-one::-webkit-scrollbar-track{
+    -webkit-box-shadow: none; 
+    border-radius: 0px;
+    background: #DEDFE1 0% 0% no-repeat padding-box;
+}
+.template-partitions-two .color-scheme-div{
+    display: table;
+  }
+/* sprite loaded for mobile view of template page */
+ 
+.group-309, .group-310, .group-314, .group-315, .group-312, 
+.group-313, .group-308, .group-316, .group-317, .group-311
+{ display: inline-block; 
+  background: url('../images/template_sprite.png') no-repeat; 
+  overflow: hidden; 
+  text-indent: -9999px; 
+  text-align: left; 
+}
+ 
+.group-309 { background-position: -3px -0px; width: 43px; height: 43px; }
+.group-310 { background-position: -3px -46px; width: 43px; height: 43px; }
+.group-314 { background-position: -3px -92px; width: 43px; height: 43px; }
+.group-315 { background-position: -3px -138px; width: 43px; height: 43px; }
+.group-312 { background-position: -3px -184px; width: 32px; height: 40px; }
+.group-313 { background-position: -3px -227px; width: 32px; height: 40px; }
+.group-308 { background-position: -3px -270px; width: 14px; height: 14px; }
+.group-316 { background-position: -20px -270px; width: 12px; height: 7px; }
+.group-317 { background-position: -20px -280px; width: 10px; height: 6px; }
+.group-311 { background-position: -35px -270px; width: 8px; height: 13px; }
+
+/* sprite css ends */
+
+/* mobile view starts for template page and it's popup */
+
+@media only screen and (max-width: 768px) {
+    .tooltip {
+        display: none !important;
+    }
+  /* For mobile phones: */
+  .myModal_customTemplatePreview .modal-dialog {
+      width: 90%;
+      max-width: 100%;
+      height: 90%;
+  }
+  .myModal_customTemplatePreview .height100{
+    height: 100%;
+  }
+  .myModal_customTemplatePreview .modal-content,.myModal_customTemplatePreview .modal-body{
+    height: 100%;
+  }
+  /*.myModal_customTemplatePreview .tpl-container{
+    height: 100%;
+  }*/
+  /*.tpl-bundle{
+    height: 100%;
+  }*/
+  .template-partitions-one{
+    height: calc(100% - 100px);
+  }
+
+  .template-partitions-two .color-scheme-div{
+    /*padding: 30px 7px 0;*/
+    height: 100px;
+    max-height: 100px;
+  }
+  .item{
+    margin-top: 60px;
+  }
+  .color-scheme-close.close,.selected-variant{
+    display: block;
+  }
+  .color-scheme-div .color-text{
+    font-size: 18px;
+  }
+  .mob-screen-elem .mob-hide{
+    display: none;
+  }
+  .mob-screen-elem .mob-show{
+    display: block !important;
+  }
+  .mob-screen-elem .custom-div{
+    position: absolute;
+    /*top: -535px;*/
+    top: -8px;
+    background: white;
+    width: 100%;
+    height: 56px;
+    padding: 18px;
+    border-radius: 8px 8px 0 0;
+  }
+  .mob-screen-elem .top-content-area{
+    margin-top: -10px;
+  }
+  .template-partitions-two{
+    background: #ecedee;
+    height: 24px;
+    position: static;
+  }
+  .template-partitions-two .minus-cva{
+    position: absolute;
+    width: 100%;
+    bottom: 27px;
+  }
+  .mob-color-variants-area{
+    background: white;
+    margin-top: -30px;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+  .mob-screen-elem .find-me{
+    position: relative;
+    top: 7px;
+    z-index: 1;
+    /*left: 60px;*/
+    float: right;
+  }
+  .mob-screen-elem .temp-choose{
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  button.slick-arrow.slick-prev {
+    left: 0px;
+    border-radius: 0 30px 30px 0;
+  }
+  button.slick-arrow.slick-next {
+      right: 0px;
+      border-radius: 30px 0 0 30px;
+  }
+  button.slick-arrow.slick-all{
+    top: 45%;
+    width: 35px;
+    height: 53px;
+  }
+  .slick-arrow:before{
+    bottom: 0;
+  }
+}
+/* mobile view ends */
