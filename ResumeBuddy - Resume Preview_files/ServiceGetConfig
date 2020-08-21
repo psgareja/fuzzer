@@ -1,3 +1,0 @@
-SnapEngage.callbackGetWidgetConfig(1,"No agent is available right now. Email us your Query.","","",0,0,0,0,0,"IN");
-if ( typeof SnapEngage.setVisitorCountry == 'function' ) { SnapEngage.setVisitorCountry("IN");
-}
